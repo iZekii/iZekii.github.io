@@ -8,8 +8,8 @@ layout: default
 
 <h2>Classes</h2>
 <ul>
-	{% assign filtered_classes = site.classes | where: 'weapon', page.name %}
-	{% for class in filtered_classes %}
-    	<li><a href="{{ class.url }}">{{ class.name }}</a></li>
+	{% assign filtered_posts = site.posts | where: 'weapon', page.name %}
+	{% for post in filtered_posts %}
+    	<li><a href="{{ post.url }}">{{ post.name }}</a></li>
   	{% endfor %}
 </ul>
