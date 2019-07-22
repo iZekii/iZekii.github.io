@@ -5,3 +5,11 @@ layout: default
 <h2>{{ page.description }}</h2>
 
 {{ content }}
+
+<h2>Classes</h2>
+<ul>
+	{% assign filtered_classes = site.classes | where: 'weapon', page.name %}
+	{% for class in filtered_classes %}
+    	<li><a href="{{ class.url }}">{{ class.name }}</a></li>
+  	{% endfor %}
+</ul>
