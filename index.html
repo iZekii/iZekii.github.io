@@ -3,4 +3,12 @@ layout: default
 title: Home
 ---
 
-<h1>Testing that jekyll is working</h1>
+<h1>Weapons</h1>
+
+<ul>
+	{% for weapon in site.weapons %}
+	<li>
+		<h2>{{ weapon.name }}</h2>
+	</li>
+	{% endfor %}
+</ul>
