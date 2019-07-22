@@ -1,3 +1,14 @@
 collections: 
   weapons: 
     output: true
+
+defaults: 
+  - scope: 
+      path: ""
+      type: "weapons"
+    values:
+      layout: "weapon"
+  - scope: 
+      path: ""
+    values:
+      layout: "default"
