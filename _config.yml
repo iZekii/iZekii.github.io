@@ -8,6 +8,11 @@ defaults:
       type: "weapons"
     values:
       layout: "weapon"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
   - scope: 
       path: ""
     values:
