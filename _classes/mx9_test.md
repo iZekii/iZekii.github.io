@@ -1,6 +1,6 @@
 ---
 layout: class
-weapon: MX9
+weapon: mx9
 name: EPIC GAMER 
 author: Zekii
 ---
