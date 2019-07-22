@@ -89,3 +89,13 @@ title: Home
 		</li>
 	{% endfor %}
 </ul>
+
+<h1>Latest Classes</h1>
+
+<ul>
+  {% for class in site.classes %}
+    <li>
+      <h2><a href="{{ class.url }}">{{ class.title }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>
