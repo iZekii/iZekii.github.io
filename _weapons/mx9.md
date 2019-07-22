@@ -1,5 +1,5 @@
 ---
 name: MX9
-category: Submachine Guns
+category: Submachine Gun
+description: Full-auto submachine gun. Balanced fire-rate with moderate recoil.
 ---
-Full-auto submachine gun. Balanced fire-rate with moderate recoil.

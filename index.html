@@ -8,7 +8,84 @@ title: Home
 <ul>
 	{% for weapon in site.weapons %}
 	<li>
-		<h2>{{ weapon.name }}</h2>
+		<h2>Assault Rifles</h2>
+		<ul>
+			{% if weapon.category == "Assault Rifle"}
+				<li>
+					<h3><a href="{{ weapon.url }}">{{ weapon.name }}</a></h3>
+				</li>
+			{% endif %}
+		</ul>
+	</li>
+	<li>
+		<h2>Submachine Guns</h2>
+		<ul>
+			{% if weapon.category == "Submachine Gun"}
+				<li>
+					<h3><a href="{{ weapon.url }}">{{ weapon.name }}</a></h3>
+				</li>
+			{% endif %}
+		</ul>
+	</li>
+	<li>
+		<h2>Tactical Rifles</h2>
+		<ul>
+			{% if weapon.category == "Tactical Rifles"}
+				<li>
+					<h3><a href="{{ weapon.url }}">{{ weapon.name }}</a></h3>
+				</li>
+			{% endif %}
+		</ul>
+	</li>
+	<li>
+		<h2>Sniper Rifles</h2>
+		<ul>
+			{% if weapon.category == "Sniper Rifles"}
+				<li>
+					<h3><a href="{{ weapon.url }}">{{ weapon.name }}</a></h3>
+				</li>
+			{% endif %}
+		</ul>
+	</li>
+	<li>
+		<h2>Pistols</h2>
+		<ul>
+			{% if weapon.category == "Pistols"}
+				<li>
+					<h3><a href="{{ weapon.url }}">{{ weapon.name }}</a></h3>
+				</li>
+			{% endif %}
+		</ul>
+	</li>
+	<li>
+		<h2>Shotguns</h2>
+		<ul>
+			{% if weapon.category == "Shotguns"}
+				<li>
+					<h3><a href="{{ weapon.url }}">{{ weapon.name }}</a></h3>
+				</li>
+			{% endif %}
+		</ul>
+	</li>
+	<li>
+		<h2>Launchers</h2>
+		<ul>
+			{% if weapon.category == "Launchers"}
+				<li>
+					<h3><a href="{{ weapon.url }}">{{ weapon.name }}</a></h3>
+				</li>
+			{% endif %}
+		</ul>
+	</li>
+	<li>
+		<h2>Melee</h2>
+		<ul>
+			{% if weapon.category == "Melee"}
+				<li>
+					<h3><a href="{{ weapon.url }}">{{ weapon.name }}</a></h3>
+				</li>
+			{% endif %}
+		</ul>
 	</li>
 	{% endfor %}
 </ul>
