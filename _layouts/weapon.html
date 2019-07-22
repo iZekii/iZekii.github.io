@@ -10,6 +10,6 @@ layout: default
 <ul>
 	{% assign filtered_posts = site.posts | where: 'weapon', page.class_name %}
 	{% for post in filtered_posts %}
-    	<li><a href="{{ post.url }}">{{ post.name }}</a></li>
+    	<li><a href="{{ post.url }}">{{ post.class_name }}</a></li>
   	{% endfor %}
 </ul>
