@@ -3,5 +3,43 @@ layout: default
 ---
 <h1>{{ page.weapon }} Class </h1>
 <h3>{{ page.class_name }} - {{ page.author }}</h3>
+<br>
+<h4>Primary: {{ page.weapon }}</h4>
+<h5>Sight</h5>
+<ul><li>{{ page.primary_sight }}</li></ul>
+<h5>Attachments</h5>
+<ul>
+	{% for attachment in page.primary_attachments %}
+	<li>{{ attachment }}</li>
+	{% endfor %}
+</ul>
+<br>
+<h4>Secondary: {{ page.secondary_weapon }}</h4>
+<h5>Sight</h5>
+<ul><li>{{ page.secondary_sight }}</li></ul>
+<h5>Attachments</h5>
+<ul>
+	{% for attachment in page.secondary_attachments %}
+	<li>{{ attachment }}</li>
+	{% endfor %}
+</ul>
+<br>
+<h5>Gear: {{ page.gear }}</h5>
+<h5>Equipment: {{ page.equipment }}</h5>
+<h5>Perks:</h5>
+<ul>
+	{% for perk in page.perks %}
+	<li>{{ perk }}</li>
+	{% endfor %}
+</ul>
+<h5>Wildcards: </h5>
+<ul>
+	{% for wildcard in page.wildcards %}
+	<li>{{ wildcard }}</li>
+	{% endfor %}
+</ul>
+
+<br>
+<h4>Description</h4>
 
 {{ content }}

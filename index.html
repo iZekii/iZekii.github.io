@@ -1,29 +1,38 @@
 ---
 layout: default
 title: Home
-categories: ["Assault Rifle", "Submachine Gun", "Tactical Rifle", "Light Machine Gun", "Sniper Rifle", "Pistol", "Launcher", "Melee"]
+categories: ["Assault Rifle", "Submachine Gun", "Tactical Rifle", "Light Machine Gun", "Sniper Rifle", "Pistol", "Shotgun", "Launcher", "Melee"]
 ---
 
-<h3>Weapons</h3>
-{% for category in page.categories %}
-<h2>{{ category }}</h2>
-<ul>
-	{% for weapon in site.weapons%}
-		{% if weapon.category == category %}
-		<li><p><a href="{{ weapon.url }}">{{ weapon.name }}</a></p></li>
-		{% endif %}
+<!-- Page header -->
+<div id='header'>
+	<h1>BO4 Weapon Loadouts</h1>
+</div>
+
+
+<!-- Page sidebar -->
+<div id='sidebar'>
+	<h2>Weapons</h2>
+	{% for category in page.categories %}
+		<h3>{{ category }}</h3>
+		{% for weapon in site.weapons%}
+			{% if weapon.category == category %}
+				<a href="{{ weapon.url }}">{{ weapon.name }}</a>
+			{% endif %}
+		{% endfor %}
 	{% endfor %}
-
-</ul>
-{% endfor %}
+</div>
 
 
-<h1>Latest Classes</h1>
+<!-- Page content -->
+<div id="content">
+	<h1>Latest Classes</h1>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h3><a href="{{ post.url }}">{{ post.weapon }} - {{ post.class_name }} By {{ post.author }}</a></h3>
-    </li>
-  {% endfor %}
-</ul>
+	<ul>
+	  {% for post in site.posts %}
+	    <li>
+	      <h3><a href="{{ post.url }}">{{ post.weapon }} - {{ post.class_name }} By {{ post.author }}</a></h3>
+	    </li>
+	  {% endfor %}
+	</ul>
+</div>
