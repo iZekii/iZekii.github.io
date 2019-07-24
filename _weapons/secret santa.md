@@ -1,5 +1,5 @@
 ---
 name: SECRET SANTA
-category: Melee
+type: Melee, DLC
 description: Lethal melee weapon with a hint of holiday cheer
 ---

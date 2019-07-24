@@ -1,5 +1,5 @@
 ---
 name: HELLION SALVO
-category: Launcher
+type: Launcher
 description: Lock-on or free fire rocket launcher. Reliable anti-vehicle weapon with anti-personnel capabilities.
 ---

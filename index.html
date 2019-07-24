@@ -1,38 +1,14 @@
 ---
 layout: default
 title: Home
-categories: ["Assault Rifle", "Submachine Gun", "Tactical Rifle", "Light Machine Gun", "Sniper Rifle", "Pistol", "Shotgun", "Launcher", "Melee"]
 ---
 
-<!-- Page header -->
-<div id='header'>
-	<h1>BO4 Weapon Loadouts</h1>
-</div>
+<h1>Latest Classes</h1>
 
-
-<!-- Page sidebar -->
-<div id='sidebar'>
-	<h2>Weapons</h2>
-	{% for category in page.categories %}
-		<h3>{{ category }}</h3>
-		{% for weapon in site.weapons%}
-			{% if weapon.category == category %}
-				<a href="{{ weapon.url }}">{{ weapon.name }}</a>
-			{% endif %}
-		{% endfor %}
-	{% endfor %}
-</div>
-
-
-<!-- Page content -->
-<div id="content">
-	<h1>Latest Classes</h1>
-
-	<ul>
-	  {% for post in site.posts %}
-	    <li>
-	      <h3><a href="{{ post.url }}">{{ post.weapon }} - {{ post.class_name }} By {{ post.author }}</a></h3>
-	    </li>
-	  {% endfor %}
-	</ul>
-</div>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h3><a href="{{ post.url }}">{{ post.weapon }} - {{ post.class_name }} By {{ post.author }}</a></h3>
+    </li>
+  {% endfor %}
+</ul>

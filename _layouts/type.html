@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<h1>Weapon type: {{ page.type }}</h1>
+
+{% for weapon in site.weapons %}
+	{% if weapon.type contains page.type %}
+		{{ weapon.name }}
+	{% endif %}
+{% endfor %}

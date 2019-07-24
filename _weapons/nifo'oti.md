@@ -1,5 +1,5 @@
 ---
 name: NIFO'OTI
-category: Melee
+type: Melee, DLC
 description: Lethal melee weapon. A blessed ceremonial war club.
 ---

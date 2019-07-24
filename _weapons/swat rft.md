@@ -1,5 +1,5 @@
 ---
 name: SWAT RFT
-category: Assault Rifle
+type: [Assault Rifle, DLC]
 description: Full-auto assault rifle. Well rounded with reliable damage.
 ---

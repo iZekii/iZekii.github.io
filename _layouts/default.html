@@ -6,6 +6,29 @@
 	<link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-	{{ content }}
+
+	<!-- Page header -->
+	<div id='header'>
+		<h1><a href="/" style="text-decoration: none; color: black;">BO4 Weapon Loadouts</a></h1>
+	</div>
+
+
+	<!-- Page sidebar -->
+	<div id='sidebar'>
+		<h2>Weapons</h2>
+		{% for type in site.types %}
+			<h3>{{ type.plural }}</h3>
+			{% for weapon in site.weapons%}
+				{% if weapon.type contains type.type %}
+					<a href="{{ weapon.url }}" {% if page.name == weapon.name %}style="color: red;"{% endif %}>{{ weapon.name }}</a>
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+	</div>
+
+	<!-- Page content -->
+	<div id="content">
+		{{ content }}
+	</div>
 </body>
 </html>

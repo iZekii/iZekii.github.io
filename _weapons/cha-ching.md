@@ -1,5 +1,5 @@
 ---
 name: CHA-CHING
-category: Melee
+type: Melee, DLC
 description: Lethal melee weapon. A heavy sack of coins is an excellent improvised weapon.
 ---

@@ -1,5 +1,5 @@
 ---
 name: TIGERSHARK
-category: Light Machine Gun
+type: Light Machine Gun, DLC
 description: Full-auto light machine gun. Improved movement and reload speed.
 ---
